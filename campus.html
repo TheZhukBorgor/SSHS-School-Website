@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Siaton Science Highschool Official Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="facilities.html">CAMPUS</a></li>
+                        <li><a href="Events & Activities.html">EVENTS & ACTIVITIES</a></li>
+                        <li><a href="organizations.html">ORGANIZATIONS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Campus Facilities</h1>
+        </section>
+
+<!----- Facilities ----->
+
+<section class="Facilities">
+    <h1>Our Facilities</h1>
+    <p>placeholder text: about school, story, history, staff, events etc</p>
+
+    <div class="row">
+        <div class="Facilities-col">
+            <img src="SSHS CAMPUS/ICT.jpg">
+            <h3>ICT ROOM</h3>
+            <p>Deliberately boasting with profound excellence and skills, Siaton Science High School is also equipped with functional and
+                definite amounts of technologies particularly computers and or related cogitations. With the entirety of the equipment currently 
+                upholded in its own emplacement-the INOFMRATION and COMMUNICATIONS TECHNOLOGY (ICT)</p>
+        </div>
+        <div class="Facilities-col">
+            <img src="SSHS CAMPUS/Canteen.jpg">
+            <h3>CANTEEN AREA</h3>
+            <p>For students feel famishment, certain establishments are built and or commissiopned to accompany thriving students whom are aiding themselves
+                astray from hunger</p>
+        </div>
+        <div class="Facilities-col">
+            <img src="SSHS CAMPUS/Stage.jpg">
+            <h3>STAGE</h3>
+            <p>Being small was never been a problem so SSHS's stage. Having a congested history of performances held and depositions enabled such structure
+                to remain relevant throughout the years of operation. From recognition evenbts to presentations you name it, for the stage will come in handy
+                for both the students and teachers  if necessary.</p>
+        </div>
+    </div>
+   
+    
+
+
+</section>
+
+
+
+<!----- Footer ----->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Another placeholder text, will discuss on what to put in this space on a later date.<br> until further notice the space shall
+        constain this text.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+    </div>
+</section>
+
+
+
+
+
+<!------Javascript for Toggle menu------>
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";    
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>

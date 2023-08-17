@@ -1,0 +1,632 @@
+        <!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Siaton Science Highschool Official Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.281),rgba(4,9,30,0.55)),url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 1% 8%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 260px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FF69B4;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #53bfff;
+    background: #53bfff;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #53bfff;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*-----About-----*/
+
+.About{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}  
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.About-col{
+    flex-basis: 31%;
+    background: #ffbde0;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.About-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.347);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*------ campus ------*/
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5;
+}
+.layer:hover{
+    background: rgba(96, 205, 255, 0.685);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*-------Organizations-------*/
+
+.Facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.Facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.Facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.Facilities-col p{
+    padding: 0;
+}
+.Facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*------- organizations -------*/
+
+.Organizations{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.Organizations-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.Organizations-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.Organizations-col p{
+    padding: 0;
+}
+.Organizations-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.Organizations-col img{
+    padding: 3px;
+    background-color: #53bfff;
+    transition: .2s ease-in-out; 
+    width: 270px;
+    height: 220px;  
+    margin: 0 auto;
+  }
+  .Organizations-col:hover img{
+    transform: scale(2.3);
+  }
+/*------- testimonials -------*/
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #53bfff;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testimonial-col p{
+    padding: 0;
+}
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.testimonial-col .fa{
+    color: #FF69B4;
+}
+@media(max-width: 700px){
+    .testimonial-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+/*------- call to action -------*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px){
+    .cta h1{
+    font-size: 24px;
+    }
+}
+
+/*------- footer -------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fa{
+    color: #FF69B4;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+/*------- about us page -------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+}
+
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+
+.red-btn{
+    border: 1px solid #53bfff;
+    background: transparent;
+    color: #53bfff;
+}
+
+.red-btn:hover{
+    color: #fff;
+}
+
+
+/* ------- Our Events & Activities ------- */
+
+.Events{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.Events-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.Events-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.Events-col p{
+    padding: 0;
+}
+.Events-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.Events-col img{
+    padding: 3px;
+    background-color: #53bfff;
+    transition: .2s ease-in-out; 
+    width: 180px;
+    height: 270px;  
+    margin: 0 auto;
+  }
+  .Events-col:hover img{
+    transform: scale(2.3);
+  }
+</style>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="campus.html">CAMPUS</a></li>
+                        <li><a href="Events & Activities.html">EVENTS & ACTIVITIES</a></li>
+                        <li><a href="organizations.html">ORGANIZATIONS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Siaton's Science Highschool</h1>
+                <p>WELCOME TO OUR BEAUTIFUL SIATON SCIENCE HIGH! WHERE YOU CAN FIND BRIGHT SMILES AND EVEN BRIGHTER MINDS!<br>
+                    TAKE A MOMENT TO EXPLORE OUR CAMPUS WITH OUR OFFICIAL WEBSITE.
+                </p>
+                <a href="https://www.facebook.com/soarhighsiatonsciencehigh/" class="hero-btn">Visit Us To Know More</a>
+            </div>
+        </section>
+<!------- About ------->
+<section class="About">
+    <h1>About the school</h1>
+    <p>WE WELCOME YOU TO OUR WONDERFUL SCHOOL</p>
+
+    <div class="row">
+        <div class="About-col">
+            <h3>Our Campus</h3>
+            <p>Explore our beautiful campus from within this website!
+            </p>
+        </div>
+        <div class="About-col">
+            <h3>Our staff</h3>
+            <p>See the places that our staff and Teachers use in order to provide quality education to our students!
+            </p>
+        </div>
+        <div class="About-col">
+            <h3>Our students</h3>
+            <p>See the facilities that our students reside in and use to develop our capabilities as the future of this country!
+            </p>
+        </div>
+    </div>
+</section>
+
+<!------- campus ------>
+
+<section class="campus">
+    <h1>Our Wonderful Campus</h1>
+    <p>See the major buildings within our campus</p>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/junior.jpg">
+            <div class="layer">
+                <h3>JUNIOR DEPARTMENT</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="SSHS CAMPUS/Seniorhigh.jpg">
+            <div class="layer">
+                <h3>SENIOR DEPARTMENT</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="SSHS CAMPUS/Faculty.jpg">
+            <div class="layer">
+                <h3>STAFF DEPARTMENT</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------- Facilites ------->
+
+<section class="Facilities">
+    <h1>Our Facilites</h1>
+    <p>The facilities that which us students and teachers use on a day to day basis.</p>
+
+    <div class="row">
+        <div class="Facilities-col">
+            <img src="SSHS CAMPUS/ICT.jpg">
+            <h3>ICT ROOM</h3>
+            <p>Deliberately boasting with profound excellence and skills, Siaton Science High School is also equipped with functional and
+                definite amounts of technologies particularly computers and or related cogitations. With the entirety of the equipment currently 
+                upholded in its own emplacement-the INOFMRATION and COMMUNICATIONS TECHNOLOGY (ICT).</p>
+        </div>
+        <div class="Facilities-col">
+            <img src="SSHS CAMPUS/Canteen.jpg">
+            <h3>CANTEEN AREA</h3>
+            <p>For students feel famishment, certain establishments are built and or commissiopned to accompany thriving students whom are aiding themselves
+                astray from hunger.</p>
+        </div>
+        <div class="Facilities-col">
+            <img src="SSHS CAMPUS/Stage.jpg">
+            <h3>STAGE</h3>
+            <p>Being small was never been a problem so SSHS's stage. Having a congested history of performances held and depositions enabled such structure
+                to remain relevant throughout the years of operation. From recognition evenbts to presentations you name it, for the stage will come in handy
+                for both the students and teachers  if necessary.</p>
+        </div>
+    </div>
+    
+
+</section>
+
+<!----- school hymn ----->
+
+<section class="Facilities">
+    <h1>Trailer and Our School Hymn</h1>
+    <p>A trailer and hymn video directed by our Grade 10 students</p>
+    <div class="row">
+        <div class="Facilities-col">
+            <video width="320" height="240" controls> <source src="Videos/FINAL TRAILER.mp4" type="video/mp4">
+                <h3>Trailer</h3></video> 
+            <h3>Trailer</h3>
+        </div>
+        <div class="Facilities-col" type="video/MOV">
+            <video width="320" height="240" controls> <source src="Videos/hymn.mp4" type="video/mp4">
+                <h3>Trailer</h3></video> 
+            <h3>Hymn</h3>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!----- Call To Action ----->
+
+<section class="cta">
+    <h1>Contact Our School Now For Details</h1>
+    <a href="https://www.facebook.com/soarhighsiatonsciencehigh/" class="hero-btn">CONTACT US</a>
+</section>
+
+
+<!----- Footer ----->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>For more details visit our official Facebook page.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+    </div>
+</section>
+
+
+
+
+
+<!------Javascript for Toggle menu------>
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";    
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>
+

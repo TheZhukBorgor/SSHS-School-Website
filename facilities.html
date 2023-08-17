@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Siaton Science Highschool Official Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="facilities.html">CAMPUS</a></li>
+                        <li><a href="Events & Activities.html">EVENTS & ACTIVITIES</a></li>
+                        <li><a href="organizations.html">ORGANIZATIONS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Campus Facilities</h1>
+        </section>
+
+<!----- Facilities ----->
+
+<section class="Facilities">
+    <h1>Our Campus</h1>
+    <p>placeholder text: about school, story, history, staff, events etc</p>
+
+    <div class="row">
+        <div class="Facilities-col">
+            <img src="images/0004.png">
+            <h3>ICT ROOM</h3>
+            <p>Another placeholder text, will discuss on what to put in this space on a later date. until further notice the space shall
+                constain this text.</p>
+        </div>
+        <div class="Facilities-col">
+            <img src="images/0005.png">
+            <h3>CANTEEN AREA</h3>
+            <p>Another placeholder text, will discuss on what to put in this space on a later date. until further notice the space shall
+                constain this text.</p>
+        </div>
+        <div class="Facilities-col">
+            <img src="images/0006.png">
+            <h3>STAGE</h3>
+            <p>Another placeholder text, will discuss on what to put in this space on a later date. until further notice the space shall
+                constain this text.</p>
+        </div>
+    </div>
+    
+
+</section>
+
+
+
+<!----- Footer ----->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Another placeholder text, will discuss on what to put in this space on a later date.<br> until further notice the space shall
+        constain this text.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+    </div>
+</section>
+
+
+
+
+
+<!------Javascript for Toggle menu------>
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";    
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>

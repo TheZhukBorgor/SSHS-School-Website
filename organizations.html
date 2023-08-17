@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Siaton Science Highschool Official Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="campus.html">CAMPUS</a></li>
+                        <li><a href="Events & Activities.html">EVENTS & ACTIVITIES</a></li>
+                        <li><a href="organizations.html">ORGANIZATIONS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Campus Organizations</h1>
+        </section>
+
+<!----- Organizations ----->
+
+<section class="Organizations">
+    <h1>Our Student Organizations</h1>
+    <p>A Collection Of Our Clubs and Student Organizations.</p>
+
+    <div class="row">
+        <div class="Organizations-col">
+            <img src="Blue and White Circle Organizational Chart/3.png">
+            <h3>SUPREME STUDENT GOVERNMENT</h3>
+            <p>Our supreme student council, Leaders Of The Student Body. They Manage The Logistics, <br>
+                Finances And Scheduling Of Events and Activities</p>
+        </div>
+        <div class="Organizations-col">
+            <img src="Blue and White Circle Organizational Chart/4.png">
+            <h3>MAPEH CLUB</h3>
+            <p>The Mapeh Club Handles And Helps All Students That Have An  Involvement In <br>
+                Sports, Health, Art, And Music.
+            </p>
+        </div>
+        <div class="Organizations-col">
+            <img src="Blue and White Circle Organizational Chart/5.png">
+            <h3>ENGLISH CLUB</h3>
+            <p>Our English Club Is In Charge Of Helping Students During Events Relating to <br>
+                literature, written poetry, spoken Poetry And Journalism. 
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="Organizations-col">
+            <img src="Blue and White Circle Organizational Chart/6.png">
+            <h3>BARKADA KONTRA DROGA</h3>
+            <p>Our BKD In Charge of Surveillance And Advocacy Against The Use of Drugs And Harmfull Substances.</p>
+        </div>
+        <div class="Organizations-col">
+            <img src="Blue and White Circle Organizational Chart/7.png">
+            <h3>BOOKWORM CLUB</h3>
+            <p>Our Bookworm Club Manages, Upkeeps, and Helps With Looking Over The School library.<br>
+                 Managing Logistics of where and when books are returned to the library</p>
+        </div>
+        <div class="Organizations-col">
+            <img src="Blue and White Circle Organizational Chart/8.png">
+            <h3>YES - ORGANIZATION</h3>
+            <p>"Always say yes" motto of our YES - Organization.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="Organizations-col">
+            <img src="Blue and White Circle Organizational Chart/9.png">
+            <h3>FILIPINO CLUB</h3>
+            <p>The Filipino Club Manages and </p>
+        </div>
+        <div class="Organizations-col">
+            <img src="Blue and White Circle Organizational Chart/10.png">
+            <h3>MATH CLUB</h3>
+            <p>Another placeholder text, will discuss on what to put in this space on a later date. until further notice the space shall
+                constain this text.</p>
+        </div>
+    </div>
+    
+
+</section>
+
+
+
+<!----- Footer ----->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>visit other pages of our webpage.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+    </div>
+</section>
+
+
+
+
+
+<!------Javascript for Toggle menu------>
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";    
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>

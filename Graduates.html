@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Siaton Science Highschool Official Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">FACILITIES</a></li>
+                        <li><a href="">EVENTS & ACTIVITIES</a></li>
+                        <li><a href="">CAMPUS</a></li>
+                        <li><a href="">ORGANIZATIONS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Events & Activities</h1>
+        </section>
+
+<!----- Events & Activities ----->
+
+<section class="Events-content">
+
+    <div class="row">
+        <div class="Events-left">
+            <img src="images/0014.png">
+            <h2>Our Organizations And Graduates</h2>
+            <p>Another placeholder text, will discuss on what to put in this space on a later date. until further notice the space shall
+                constain this text.</p>
+            <br>
+            <p>Another placeholder text, will discuss on what to put in this space on a later date. until further notice the space shall
+                constain this text.Another placeholder text, will discuss on what to put in this space on a later date. until further notice the space shall
+                constain this text.Another placeholder text, will discuss on what to put in this space on a later date. until further notice the space shall
+                constain this text.</p>
+            <p>Another placeholder text, will discuss on what to put in this space on a later date. until further notice the space shall
+                constain this text.Another placeholder text, will discuss on what to put in this space on a later date. until further notice the space shall
+                constain this text.Another placeholder text, will discuss on what to put in this space on a later date. until further notice the space shall
+                constain this text.</p>
+            <p>Another placeholder text, will discuss on what to put in this space on a later date. until further notice the space shall
+                constain this text.Another placeholder text, will discuss on what to put in this space on a later date. until further notice the space shall
+                constain this text.Another placeholder text, will discuss on what to put in this space on a later date. until further notice the space shall
+                constain this text.</p>
+        </div>
+        <div class="Events-right">
+            <h3>Post categories</h3>
+            <div>
+                <span>Organization 1</span>
+                <span>Organization 2</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!----- Footer ----->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Another placeholder text, will discuss on what to put in this space on a later date.<br> until further notice the space shall
+        constain this text.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+    </div>
+</section>
+
+<!------Javascript for Toggle menu------>
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";    
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>
